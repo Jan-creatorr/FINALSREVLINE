@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Black', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: #d92027;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.navbar h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.gauge img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gauge img:hover {
+    transform: rotate(15deg) scale(1.1);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 50px 80px;
+    position: relative;
+}
+
+.login-container {
+    background-color: #000;
+    border: 5px solid #d92027;
+    padding: 40px;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    background: #fff;
+    color: #000;
+}
+
+.login-container .forgot {
+    color: #d92027;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.login-container button:hover {
+    background-color: #d92027;
+    color: #fff;
+}
+
+.login-container p {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-container p a {
+    color: #d92027;
+    text-decoration: none;
+}
+
+.background-text {
+    position: relative;
+}
+
+.background-text h1 {
+    font-size: 80px;
+}
+
+.background-text .rev {
+    color: #d92027;
+}
+
+.background-text .line {
+    color: #fff;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        -130deg,
+        transparent 20%,
+        #ff0000 20%,
+        #ff0000 35%,
+        transparent 35%,
+        transparent 50%,
+        #adadad 50%,
+        #adadad 65%,
+        transparent 65%
+    );
+    z-index: -1;
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .background-text h1 {
+        font-size: 50px;
+        margin-top: 40px;
+    }
+
+    .login-container {
+        width: 80%;
+        max-width: 350px;
+    }
+
+    body::before {
+        display: none;
+    }
+}
+

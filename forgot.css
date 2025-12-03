@@ -1,0 +1,95 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; width: 100%; }
+body {
+    background: url("assets/car-bg.jpg") no-repeat center center/cover;
+    font-family: 'Arial Black', sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: #d92027;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 15px 45px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: calc(100vh - 70px);
+    padding: 40px 80px;
+}
+
+.form-container {
+    background-color: rgba(0,0,0,0.8);
+    border: 10px solid #d92027;
+    padding: 40px;
+    width: 400px;
+    z-index: 5;
+}
+
+.form-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.gauge-icon {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.form-header h2 {
+    font-size: 26px;
+    font-weight: 900;
+    color: #fff;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    background: #fff;
+    color: #000;
+}
+
+button {
+    display: block;
+    margin: 15px auto 0;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    background: #d92027;
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .form-container {
+        width: 90%;
+        padding: 30px;
+    }
+    .form-header h2 {
+        font-size: 22px;
+    }
+    .gauge-icon {
+        width: 40px;
+    }
+}

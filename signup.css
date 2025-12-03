@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #d42026;
+    padding: 10px 40px;
+}
+
+.navbar h1 {
+    font-size: 28px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    gap: 80px;
+}
+
+.left-image img {
+    width: 420px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.form-container {
+    border: 15px solid #d42026;
+    padding: 30px 50px;
+    background-color: #000;
+    box-shadow: 0 0 15px rgba(212, 32, 38, 0.5);
+}
+
+.form-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.gauge-icon {
+    width: 55px;
+    height: 55px;
+}
+
+.form-header h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+button {
+    display: block;
+    width: 50%;
+    margin: 15px auto 0;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d42026;
+    color: #fff;
+    transition: 0.3s;
+}
